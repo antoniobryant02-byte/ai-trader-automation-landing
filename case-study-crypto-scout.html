@@ -22,7 +22,7 @@
     <section>
       <div class="kicker">Real internal build #2</div>
       <h1>From crypto scanner to GPT-5.5 Telegram + Discord digest.</h1>
-      <p class="lead">I rebuilt a crypto scanner into an automated alert system that collects technical data, lets Hermes GPT-5.5 interpret it, and delivers scheduled digests to Telegram and Discord.</p>
+      <p class="lead">I rebuilt a crypto scanner into an automated alert system that collects technical data, lets Hermes GPT-5.5 interpret it, and delivers scheduled digests to Telegram and Discord — now with a clearly separated speculative meme-coin watchlist.</p>
     </section>
 
     <section class="grid">
@@ -59,11 +59,24 @@ Model: Hermes GPT-5.5 / openai-codex</div>
       </div>
     </section>
 
+    <section class="section card">
+      <div class="kicker">Speculative sleeve</div>
+      <h2>Meme coins are watched separately, not blended into majors.</h2>
+      <p class="lead">DOGE, SHIB, and PEPE were added with explicit metadata so GPT-5.5 can label them as high-volatility speculative assets instead of treating them like BTC, ETH, or SOL.</p>
+      <div class="code">asset_class: CRYPTO_MEME
+risk_bucket: SPECULATIVE_MEME
+meme_coin: true
+watchlist: DOGE-USD, SHIB-USD, PEPE-USD
+
+Digest rule: separate “Speculative meme coin watch” section.
+Safety rule: informational only, no financial advice, no trade execution.</div>
+    </section>
+
     <section class="grid">
       <div class="card">
-        <div class="stat">5</div>
-        <p><strong>Crypto symbols automated first</strong></p>
-        <p class="muted">BTC, ETH, SOL, LINK, XRP.</p>
+        <div class="stat">8</div>
+        <p><strong>Crypto symbols automated</strong></p>
+        <p class="muted">5 majors plus DOGE, SHIB, and PEPE as a speculative meme sleeve.</p>
       </div>
       <div class="card">
         <div class="stat">6</div>
@@ -77,12 +90,18 @@ Model: Hermes GPT-5.5 / openai-codex</div>
       <h2>What the automation sends.</h2>
       <div class="code">₿ Crypto Scout GPT-5.5 Digest
 
-Scanned: BTC, ETH, SOL, LINK, XRP
-Actionable count: 0/5
+Majors scanned: BTC, ETH, SOL, LINK, XRP
+Speculative meme watch: DOGE, SHIB, PEPE
+Actionable count: 0/8
 
 ⚫ BTC: AVOID / NEUTRAL | conviction 10
-Price: $77,330.76 | RSI + momentum + ATR reviewed
+Price: reviewed with RSI + momentum + ATR
 GPT-5.5 read: no strong technical edge; wait for cleaner trend confirmation.
+
+🎲 Speculative meme coin watch
+• SHIB: BULLISH but AVOID | conviction 50 — watch only until stronger confirmation.
+• DOGE: NEUTRAL / AVOID | conviction 10 — no edge.
+• PEPE: NEUTRAL / AVOID | conviction 10 — no edge.
 
 Informational only — not financial advice.</div>
     </section>
